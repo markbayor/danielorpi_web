@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 98vw;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.navlink {
+  padding: 1rem;
+}
