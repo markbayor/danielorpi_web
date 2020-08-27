@@ -47,7 +47,6 @@ export default function Slider({ images }: SliderProps) {
 export const getStaticProps: GetStaticProps = async (context) => {
   const images: ImageParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/banner-images`)).data
 
-  console.log('IMAGES', images)
   return {
     props: {
       images
