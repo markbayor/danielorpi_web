@@ -1,15 +1,15 @@
-import Navbar from './components/Navbar'
-import Head from 'next/head'
-import { GetStaticProps, GetStaticPropsResult } from 'next'
+import Navbar from "./components/Navbar";
+import Head from "next/head";
+import { GetStaticProps, GetStaticPropsResult } from "next";
 
-import axios from 'axios'
-import styles from '../styles/Home.module.scss'
-import Slider from './components/Slider'
-import { ImageParams } from '../common/types'
-import { NewsletterForm } from './components/NewsletterForm'
+import axios from "axios";
+import styles from "../styles/Home.module.scss";
+import Slider from "./components/Slider";
+import { ImageParams } from "../common/types";
+import { NewsletterForm } from "./components/NewsletterForm";
 
 interface HomeProps {
-  heroimages?: ImageParams[]
+  heroimages?: ImageParams[];
 }
 
 export default function Home({ heroimages }: HomeProps) {
@@ -29,16 +29,16 @@ export default function Home({ heroimages }: HomeProps) {
       <footer className={styles.footer}>
         <NewsletterForm />
       </footer>
-    </div >
-  )
+    </div>
+  );
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const heroimages: ImageParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/heroimages`)).data
+  const heroimages: ImageParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/heroimages`)).data;
 
   return {
     props: {
-      heroimages: heroimages.filter(image => image.isActive)
+      heroimages: heroimages.filter((image) => image.isActive),
     },
-  }
-}
+  };
+};
