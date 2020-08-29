@@ -20,8 +20,9 @@ export default function Home({ heroimages }: HomeProps) {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <h3>Slider is under here</h3>
-        <Slider images={heroimages} />
+        <div className={styles.slider_container}>
+          <Slider images={heroimages} />
+        </div>
         <h1>This will be Daniel Orpi's website.</h1>
       </main>
     </div >

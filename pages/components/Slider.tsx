@@ -22,8 +22,8 @@ export default function Slider({ images }: SliderProps) {
         shouldAutoplay: true,
         shouldDisplayButtons: true,
         autoplayDuration: 5000,
-        height: '60vh',
-        width: '99vw'
+        height: '65vh',
+        width: '99.8vw'
       }}>
       <OverlayContainer>
 
@@ -31,13 +31,12 @@ export default function Slider({ images }: SliderProps) {
       {/* @ts-ignore */}
       {
         images && images.map(image => {
-          console.log('IMAGE', image)
           return (<Slide
             key={image.id}
             // @ts-ignore
             background={{
               backgroundImage: `${process.env.NEXT_PUBLIC_CMS_URL}${image.image.url}`,
-              backgroundAttachment: 'fixed'
+              backgroundAttachment: 'initial'
             }}>
           </Slide>)
         })}
