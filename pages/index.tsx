@@ -6,6 +6,7 @@ import axios from 'axios'
 import styles from '../styles/Home.module.scss'
 import Slider from './components/Slider'
 import { ImageParams } from '../common/types'
+import { NewsletterForm } from './components/NewsletterForm'
 
 interface HomeProps {
   heroimages?: ImageParams[]
@@ -25,6 +26,9 @@ export default function Home({ heroimages }: HomeProps) {
         </div>
         <h1>This will be Daniel Orpi's website.</h1>
       </main>
+      <footer className={styles.footer}>
+        <NewsletterForm />
+      </footer>
     </div >
   )
 }

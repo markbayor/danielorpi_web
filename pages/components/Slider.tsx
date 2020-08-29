@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import HeroSlider, { Slide, Nav, OverlayContainer } from 'hero-slider'
 
 import { ImageParams } from '../../common/types'
-
-import styles from '../../../styles/Slider.module.scss'
 interface SliderProps {
   images?: ImageParams[]
 }

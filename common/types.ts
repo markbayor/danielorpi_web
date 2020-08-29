@@ -41,3 +41,41 @@ export interface ImageParams {
   isActive: boolean;
   image: ImageDetails;
 }
+
+interface SongCoverFormatDetails {
+  ext: string;
+  hash: string;
+  height: number;
+  width: number;
+  size: number;
+  url: string;
+}
+export interface SongCoverDetails {
+  id: number;
+  created_at: string;
+  ext: string;
+  hash: string;
+  height: number;
+  width: number;
+  mime: string;
+  name: string;
+  size: number;
+  url: string;
+  formats: {
+    large: SongCoverFormatDetails;
+    medium: SongCoverFormatDetails;
+    small: SongCoverFormatDetails;
+    thumbnail: SongCoverFormatDetails;
+  }
+}
+export interface SongDetails {
+  id: number;
+  name: string;
+  artist: string;
+  created_at: Date;
+  updated_at: Date;
+  beatportUrl?: string;
+  spotifyUrl?: string;
+  soundcloudUrl?: string;
+  cover: SongCoverDetails;
+}

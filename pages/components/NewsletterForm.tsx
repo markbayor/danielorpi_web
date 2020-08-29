@@ -20,11 +20,12 @@ const NewsletterForm = () => {
   return (
     <div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <input type='text' onChange={e => setName(e.target.value)} />
-        <input type='text' onChange={e => setEmail(e.target.value)} />
+        <h2>Sign up for news from Daniel Orpi</h2>
+        <input placeholder='Name' type='text' onChange={e => setName(e.target.value)} />
+        <input placeholder='E-mail' type='text' onChange={e => setEmail(e.target.value)} />
         <button disabled={name.length < 1 || email.length < 1} onClick={handleSubmit}>Subscribe</button>
       </form>
-      {message.length && <h2>{message}</h2>}
+      {message.length ? <h2>{message}</h2> : ''}
     </div>
   )
 }
