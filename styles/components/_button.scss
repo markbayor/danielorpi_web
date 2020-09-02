@@ -6,18 +6,19 @@
     text-decoration: none;
     transition: all 0.2s;
     color: $color-grey-dark-4;
+   
   }
   &--nav {
     &:link,
     &:visited {
       color: #fff;
-      background-color: $color-grey-dark-4;
+      background-color: inherit;
       padding: 2rem 2.5rem;
+      margin: 1rem;
     }
     
     &:hover {
-      background-color: $color-grey-dark;
-      color: $color-grey-dark-4;
+      color: $color-primary;
       transform: scale(1.05);
     }
   }

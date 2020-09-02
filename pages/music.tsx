@@ -23,7 +23,6 @@ export default function Music({ songs }: MusicProps) {
       </Head>
       <Navbar />
       <main className='main'>
-        <h1>Daniel Orpi's Music page</h1>
         <div className='cards__container'>{songs && songs.map((song) => <SongCard song={song} />)}</div>
       </main>
       <footer className='footer'>
