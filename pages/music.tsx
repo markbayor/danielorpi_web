@@ -7,7 +7,6 @@ import Head from "next/head";
 import Navbar from "./components/Navbar";
 import { NewsletterForm } from "./components/NewsletterForm";
 
-import styles from "../styles/Music.module.scss";
 import SongCard from "./components/SongCard";
 
 interface MusicProps {
@@ -17,17 +16,17 @@ interface MusicProps {
 export default function Music({ songs }: MusicProps) {
   console.log("SONGS", songs);
   return (
-    <div className={styles.container}>
+    <div className='music-page'>
       <Head>
         <title>Daniel Orpi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
-        <h1>This will be Daniel Orpi's Music page</h1>
-        <div className={styles.cards_container}>{songs && songs.map((song) => <SongCard song={song} />)}</div>
+      <main className='main'>
+        <h1>Daniel Orpi's Music page</h1>
+        <div className='cards__container'>{songs && songs.map((song) => <SongCard song={song} />)}</div>
       </main>
-      <footer className={styles.footer}>
+      <footer className='footer'>
         <NewsletterForm />
       </footer>
     </div>

@@ -1,0 +1,95 @@
+@import '../abstracts/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 2px;
+  padding: .5rem;
+  transition: all .3s;
+
+  z-index: 99999999;
+  background-color: $color-grey-dark-4;
+  box-shadow: 0 1rem 2rem rgba(0,  0, 0, .3);
+  position: relative;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+    z-index: 9999999999;
+    box-shadow: 0 1rem 2rem rgba(0,  0, 0, .6);
+  }
+
+  &:hover .undercard {
+    transform: translateY(100%);
+    box-shadow: 0 1rem 2rem rgba(0,  0, 0, .3);
+  }
+
+  &__hero {
+    &__img {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}
+
+
+
+.undercard{
+  font-size: 1.6rem;
+
+  padding: 2rem 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: tomato;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s, z-index .1s .3s;
+  z-index: -1;
+
+  &__info-container {
+    
+  }
+
+  &__info {
+    &--container {
+
+    }
+
+    &--name {
+
+    }
+
+    &--artist {
+
+    }
+  }
+
+  &__urls--container {
+
+  }
+
+  &__url {
+    &--container {
+
+    }
+
+    &--icon {
+
+    }
+
+    &--url {
+
+    }
+
+    &--link {
+
+    }
+  }
+}

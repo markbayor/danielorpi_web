@@ -3,7 +3,7 @@ import Head from "next/head";
 import { GetStaticProps, GetStaticPropsResult } from "next";
 
 import axios from "axios";
-import styles from "../styles/Home.module.scss";
+
 import Slider from "./components/Slider";
 import { ImageParams } from "../common/types";
 import { NewsletterForm } from "./components/NewsletterForm";
@@ -14,19 +14,18 @@ interface HomeProps {
 
 export default function Home({ heroimages }: HomeProps) {
   return (
-    <div className={styles.container}>
+    <div className='home-page'>
       <Head>
         <title>Daniel Orpi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
-        <div className={styles.slider_container}>
+      <main className='main'>
+        <div className='slider__container'>
           <Slider images={heroimages} />
         </div>
-        <h1>This will be Daniel Orpi's website.</h1>
       </main>
-      <footer className={styles.footer}>
+      <footer className='footer'>
         <NewsletterForm />
       </footer>
     </div>

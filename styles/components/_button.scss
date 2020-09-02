@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    transition: all 0.2s;
+    color: $color-grey-dark-4;
+  }
+  &--nav {
+    &:link,
+    &:visited {
+      color: #fff;
+      background-color: $color-grey-dark-4;
+      padding: 2rem 2.5rem;
+    }
+    
+    &:hover {
+      background-color: $color-grey-dark;
+      color: $color-grey-dark-4;
+      transform: scale(1.05);
+    }
+  }
+}

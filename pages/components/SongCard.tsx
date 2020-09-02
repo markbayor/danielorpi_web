@@ -1,6 +1,6 @@
 import React from "react";
 import { SongDetails } from "../../common/types";
-import styles from "../../styles/Music.module.scss";
+
 import { SSL_OP_SINGLE_ECDH_USE } from "constants";
 
 interface CardProps {
@@ -17,20 +17,27 @@ export default function SongCard({ song }: CardProps) {
   const urls = getUrls(song);
 
   return (
-    <div className={styles.card}>
-      <div className={styles.card_image_container}>
-        <img className={styles.card_img} src={`${process.env.NEXT_PUBLIC_CMS_URL}${song.cover.url}`} />
+    <div className='card'>
+      <div className='card__hero'>
+        <img className='card__hero__img' src={`${process.env.NEXT_PUBLIC_CMS_URL}${song.cover.url}`} />
       </div>
-      <div className={styles.undercard_container}>
-        {urls &&
-          Object.entries(urls).map((url: string[]) => (
-            <div className={styles.url_container}>
-              <span>{url[0]}:</span>{" "}
-              <span>
-                <a href={`http://${url[1]}`}>{url[1]}</a>
-              </span>
-            </div>
-          ))}
+      <div className='undercard'>
+        <div className='undercard__info--container'>
+          <span className='undercard__info--name'>{song.name}</span>
+          <span className='undercard__info--artist'>{song.artist}</span>
+        </div>
+        <div className='undercard__urls--container'>
+          {urls &&
+            Object.entries(urls).map((url: string[]) => (
+              <div className='undercard__url--container'>
+                <div className="undercard__url--icon"></div>
+                <span className='undercard__url--url'>{url[0]}:</span>{" "}
+                <span>
+                  <a className='undercard__url--link' href={`${url[1]}`}>{url[1]}</a>
+                </span>
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );

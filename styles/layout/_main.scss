@@ -1,0 +1,30 @@
+.main {
+  padding: 3rem 2rem;
+  padding-top: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, $color-grey-light-2, $color-grey-light);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-left: 0.5rem;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

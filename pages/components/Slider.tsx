@@ -21,7 +21,7 @@ export default function Slider({ images }: SliderProps) {
         shouldDisplayButtons: true,
         autoplayDuration: 10000,
         height: '65vh',
-        width: '99.8vw'
+        width: '100%'
       }}>
       <OverlayContainer>
 
