@@ -27,6 +27,9 @@ export default function Navbar() {
         <a href="#" className="btn btn--nav">
           Diggin
         </a>
+        <a href="#" className="btn btn--nav">
+          Shop
+        </a>
       </nav>
     </div>
   );

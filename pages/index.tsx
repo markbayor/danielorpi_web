@@ -21,9 +21,9 @@ export default function Home({ heroimages }: HomeProps) {
       </Head>
       <Navbar />
       <main className='main'>
-        <div className='slider__container'>
+        {/* <div className='slider__container'>
           <Slider images={heroimages} />
-        </div>
+        </div> */}
       </main>
       <footer className='footer'>
         <NewsletterForm />

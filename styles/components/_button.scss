@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import '../base/animations';
 
 .btn {
   &:link,
@@ -6,6 +7,9 @@
     text-decoration: none;
     transition: all 0.2s;
     color: $color-grey-dark-4;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
    
   }
   &--nav {
@@ -15,10 +19,12 @@
       background-color: inherit;
       padding: 2rem 2.5rem;
       margin: 1rem;
+
+      animation: moveInBottom 1s;
     }
     
     &:hover {
-      color: $color-primary;
+      color: $color-primary-dark-2;
       transform: scale(1.05);
     }
   }
