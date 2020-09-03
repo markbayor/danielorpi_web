@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+
+.home-page {
+    min-height: 200vh;
+    // padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image:  linear-gradient(to right top, rgba(43, 43, 43, 0.3),  rgba(43, 43, 43, 0.3)), url('../../public/dani-bg.jpg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    .main {
+      transform: translateY(40%);
+    }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

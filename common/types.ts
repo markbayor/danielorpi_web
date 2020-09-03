@@ -21,7 +21,7 @@ export interface ImageDetails {
     small: ImageFormatDetails;
     medium: ImageFormatDetails;
     thumbnail: ImageFormatDetails;
-  }
+  };
   hash: string;
   ext: string;
   mine: string;
@@ -66,7 +66,7 @@ export interface SongCoverDetails {
     medium: SongCoverFormatDetails;
     small: SongCoverFormatDetails;
     thumbnail: SongCoverFormatDetails;
-  }
+  };
 }
 export interface SongDetails {
   id: number;

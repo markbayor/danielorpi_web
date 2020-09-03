@@ -1,0 +1,15 @@
+@import './base/base';
+@import './base/typography';
+@import './base/animations';
+
+@import "./pages/home";
+@import "./pages/music";
+
+@import "./components/navbar";
+@import "./components/slider";
+@import "./components/songcard";
+@import "./components/button";
+
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';

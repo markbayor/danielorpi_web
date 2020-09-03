@@ -19,9 +19,9 @@ export default function Slider({ images }: SliderProps) {
         slidingDelay: 100,
         shouldAutoplay: true,
         shouldDisplayButtons: true,
-        autoplayDuration: 5000,
+        autoplayDuration: 10000,
         height: '65vh',
-        width: '99.8vw'
+        width: '100%'
       }}>
       <OverlayContainer>
 
