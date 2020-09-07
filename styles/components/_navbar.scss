@@ -6,12 +6,9 @@
 
 .navigation {
   display: flex;
-  flex: 0 0 50%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 10rem;
-  margin-right: -5rem;
+  padding: 1.5rem 1.5rem;
   text-transform: uppercase;
-  
 }
