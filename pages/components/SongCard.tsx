@@ -1,13 +1,11 @@
 import React from "react";
 import { SongDetails } from "../../common/types";
 
-import { SSL_OP_SINGLE_ECDH_USE } from "constants";
-
 interface CardProps {
   song: SongDetails;
 }
 
-export default function SongCard({ song }: CardProps) {
+const SongCard = ({ song }: CardProps) => {
   const getUrls = (song: SongDetails) => {
     const urls: object = {};
     // @ts-ignore
@@ -18,7 +16,7 @@ export default function SongCard({ song }: CardProps) {
 
   return (
     <div className='card'>
-      <div className='card__hero'>
+      {/* <div className='card__hero'>
         <img className='card__hero__img' src={`${process.env.NEXT_PUBLIC_CMS_URL}${song.cover.url}`} />
       </div>
       <div className='undercard'>
@@ -38,7 +36,9 @@ export default function SongCard({ song }: CardProps) {
               </div>
             ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
+
+export default SongCard;

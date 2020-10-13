@@ -30,4 +30,4 @@ const NewsletterForm = () => {
   )
 }
 
-export { NewsletterForm }
+export default NewsletterForm 

@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <div className="header">
       <h1 className="header__logo">
         <Link href="/">
           <a className='btn'>
             <img />
-            Logo will be here
+            LOGO
           </a>
         </Link>
       </h1>
@@ -34,3 +34,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;

@@ -5,7 +5,7 @@ import { SongDetails } from "../common/types";
 
 import Head from "next/head";
 import Navbar from "./components/Navbar";
-import { NewsletterForm } from "./components/NewsletterForm";
+import NewsletterForm from "./components/NewsletterForm";
 
 import SongCard from "./components/SongCard";
 
@@ -33,11 +33,11 @@ export default function Music({ songs }: MusicProps) {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const songs: SongDetails[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/songs`)).data;
+  // const songs: SongDetails[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/songs`)).data;
 
   return {
     props: {
-      songs,
+      // songs,
     },
   };
 };
