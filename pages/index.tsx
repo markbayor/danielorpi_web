@@ -4,7 +4,6 @@ import { GetStaticProps, GetStaticPropsResult } from "next";
 
 import axios from "axios";
 
-import Slider from "../components/Slider";
 import { ImageParams } from "../common/types";
 import { NewsletterForm } from "../components/NewsletterForm";
 
