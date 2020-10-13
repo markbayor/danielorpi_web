@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 export default function Navbar() {
   const router = useRouter()
 
-  console.log(router)
   return (
     <div className={router.pathname === '/' ? 'header--transparent' : 'header'}>
       <h1 className="header__logo">

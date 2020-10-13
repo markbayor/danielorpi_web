@@ -32,6 +32,11 @@ export default function Home({ heroimages }: HomeProps) {
           </div> */}
         </section>
         <section className="news">
+          {/* <Carousel>
+            <Slide imageUrl="https://picsum.photos/900/400">
+              children (whatever you want to put IN the slide e.g buttons, links, etc)
+          </Slide>
+          </Carousel> */}
           NEWS
         </section>
       </main>
