@@ -1,16 +1,41 @@
 @import '../abstracts/variables';
 
-.home-page {
+.home {
     min-height: 200vh;
-    // padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
-    .main {
-      // transform: translateY(100rem);
-    }
+    // &__background--container::after {
+    //   overflow: hidden;
+    //   background-image: linear-gradient(to bottom, $color-primary-light-3, $color-primary-light-3);
+    //   z-index: 21;
+    // }
+
+    &__background--img {
+      height: 45%;
+      width: 100vw;
+      top: 0;
+      z-index: 20;
+      animation: zoomInOut 20s ease-in-out;
+      animation-iteration-count: infinite;
+  }
+}
+
+.featured {
+
+  display: block;
+  .hr {
+    margin: 3rem;
+    margin-top: 7rem;
+  }
+}
+
+.news {
+  background-color: tomato;
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -19,3 +44,5 @@
     flex-direction: column;
   }
 }
+
+
