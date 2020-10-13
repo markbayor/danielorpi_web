@@ -4,10 +4,10 @@ import { GetStaticProps } from "next";
 import { SongDetails } from "../common/types";
 
 import Head from "next/head";
-import Navbar from "./components/Navbar";
-import NewsletterForm from "./components/NewsletterForm";
+import Navbar from "../components/Navbar";
+import NewsletterForm from "../components/NewsletterForm";
 
-import SongCard from "./components/SongCard";
+import SongCard from "../components/SongCard";
 
 interface MusicProps {
   songs: SongDetails[];

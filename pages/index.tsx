@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import Head from "next/head";
 import { GetStaticProps, GetStaticPropsResult } from "next";
 
 import axios from "axios";
 
 import { ImageParams } from "../common/types";
-import NewsletterForm from "./components/NewsletterForm";
+import NewsletterForm from "../components/NewsletterForm";
 
 // import { Carousel, Slide } from 'react-clean-carousel'
 
@@ -15,22 +15,30 @@ interface HomeProps {
 
 export default function Home({ heroimages }: HomeProps) {
   return (
-    <div className='home-page'>
+    <div className='home'>
       <Head>
         <title>Daniel Orpi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+
       <main className='main'>
-        {/* <Carousel>
-          <Slide imageUrl="https://picsum.photos/900/400">
-            children (whatever you want to put IN the slide e.g buttons, links, etc)
+        <img className='home__background--img' src="/dani-bg-2.jpg" alt="" />
+        <section className="featured">
+          <hr className="hr" />
+        </section>
+        <section className="news">
+          {/* <Carousel>
+            <Slide imageUrl="https://picsum.photos/900/400">
+              children (whatever you want to put IN the slide e.g buttons, links, etc)
           </Slide>
-        </Carousel> */}
+          </Carousel> */}
+          NEWS
+        </section>
       </main>
-      <footer className='footer'>
+      {/* <footer className='footer'>
         <NewsletterForm />
-      </footer>
+      </footer> */}
     </div>
   );
 }
