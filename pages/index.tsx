@@ -1,13 +1,15 @@
 import Navbar from "../components/Navbar";
 import Head from "next/head";
 import { GetStaticProps, GetStaticPropsResult } from "next";
+import Pixel from '../components/Pixel'
 
 import axios from "axios";
 
 import { ImageParams } from "../common/types";
 import NewsletterForm from "../components/NewsletterForm";
 
-// import { Carousel, Slide } from 'react-clean-carousel'
+import { Carousel, Slide } from 'react-clean-carousel'
+
 
 interface HomeProps {
   heroimages?: ImageParams[];
@@ -19,6 +21,7 @@ export default function Home({ heroimages }: HomeProps) {
       <Head>
         <title>Daniel Orpi</title>
         <link rel="icon" href="/favicon.ico" />
+        <Pixel />
       </Head>
       <Navbar />
 
@@ -28,12 +31,16 @@ export default function Home({ heroimages }: HomeProps) {
           <hr className="hr" />
         </section>
         <section className="news">
-          {/* <Carousel>
+          <Carousel size='large'>
             <Slide imageUrl="https://picsum.photos/900/400">
-              children (whatever you want to put IN the slide e.g buttons, links, etc)
-          </Slide>
-          </Carousel> */}
-          NEWS
+            </Slide>
+            <Slide imageUrl="https://picsum.photos/901/400">
+            </Slide>
+            <Slide imageUrl="https://picsum.photos/902/400">
+            </Slide>
+            <Slide imageUrl="https://picsum.photos/903/400">
+            </Slide>
+          </Carousel>
         </section>
       </main>
       {/* <footer className='footer'>

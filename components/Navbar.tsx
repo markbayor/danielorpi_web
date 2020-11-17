@@ -14,7 +14,6 @@ const Navbar = () => {
           </a>
         </Link>
       </h1>
-
       <nav className="navigation">
         <Link href="/">
           <a className="btn btn--nav">Home</a>
