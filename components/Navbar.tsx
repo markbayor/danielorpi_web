@@ -9,8 +9,7 @@ const Navbar = () => {
       <h1 className="header__logo">
         <Link href="/">
           <a className='btn'>
-            <img />
-            LOGO
+            <img className='logo' src='/logo-header-white.png'/>
           </a>
         </Link>
       </h1>

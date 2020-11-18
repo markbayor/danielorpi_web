@@ -26,19 +26,15 @@ export default function Home({ heroimages }: HomeProps) {
       <Navbar />
 
       <main className='main'>
-        <img className='home__background--img' src="/dani-bg-2.jpg" alt="" />
+        <img className='home__background--img' src="/header-bg.jpg" alt="" />
         <section className="featured">
           <hr className="hr" />
         </section>
         <section className="news">
           <Carousel size='large'>
-            <Slide imageUrl="https://picsum.photos/900/400">
+            <Slide imageUrl="/tw-banner.jpg">
             </Slide>
-            <Slide imageUrl="https://picsum.photos/901/400">
-            </Slide>
-            <Slide imageUrl="https://picsum.photos/902/400">
-            </Slide>
-            <Slide imageUrl="https://picsum.photos/903/400">
+            <Slide imageUrl="/2-1.jpg">
             </Slide>
           </Carousel>
         </section>
