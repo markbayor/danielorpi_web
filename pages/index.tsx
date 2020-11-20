@@ -1,12 +1,8 @@
-import Navbar from "../components/Navbar";
-import Head from "next/head";
+import {Navbar, NewsletterForm, PageHead} from "../components";
 import { GetStaticProps, GetStaticPropsResult } from "next";
-import Pixel from '../components/Pixel'
-
 import axios from "axios";
 
 import { ImageParams } from "../common/types";
-import NewsletterForm from "../components/NewsletterForm";
 
 import { Carousel, Slide } from 'react-clean-carousel'
 
@@ -18,27 +14,20 @@ interface HomeProps {
 export default function Home({ heroimages }: HomeProps) {
   return (
     <div className='home'>
-      <Head>
-        <title>Daniel Orpi</title>
-        <link rel="icon" href="/favicon.ico" />
-        <Pixel />
-      </Head>
+      <PageHead />
       <Navbar />
 
       <main className='main'>
-        <img className='home__background--img' src="/dani-bg-2.jpg" alt="" />
+        {/* <img className='home__background--img' src="/hero-bg.jpg" alt="" /> */}
         <section className="featured">
-          <hr className="hr" />
-        </section>
-        <section className="news">
-          <Carousel size='large'>
-            <Slide imageUrl="https://picsum.photos/900/400">
+          {/* <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
+          {/* <hr className="hr" /> */}
+          <Carousel size='medium-large'>
+            <Slide imageUrl="/tw-banner.jpg">
             </Slide>
-            <Slide imageUrl="https://picsum.photos/901/400">
+            <Slide imageUrl="/bannner-crate-diggaz.jpg">
             </Slide>
-            <Slide imageUrl="https://picsum.photos/902/400">
-            </Slide>
-            <Slide imageUrl="https://picsum.photos/903/400">
+            <Slide imageUrl="/rumble-ep.jpg">
             </Slide>
           </Carousel>
         </section>

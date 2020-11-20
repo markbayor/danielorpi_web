@@ -8,27 +8,13 @@
     transition: all 0.2s;
     color: $color-grey-dark-4;
     text-align: center;
-    font-size: 4rem;
-    font-weight: 100;
-
-   
+    font-size: 2.5vw;
+    font-weight: 700;
   }
-  &--nav {
-    &:link,
-    &:visited {
-      color: #fff;
-      background-color: inherit;
-      padding: 1rem 2rem;
-      margin: 1rem;
-      text-shadow: 0 .5rem 1rem black;
-
-      // display: block;
-      // animation: moveInBottom .5s ease;
-    }
     
-    &:hover {
-      color: $color-primary-dark-2;
-      transform: scale(1.05);
-    }
+  &:hover {
+    color: $color-primary-dark-2;
+    transform: scale(1.05);
   }
 }
+

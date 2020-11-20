@@ -3,9 +3,7 @@ import axios from "axios";
 import { GetStaticProps } from "next";
 import { SongDetails } from "../common/types";
 
-import Head from "next/head";
-import Navbar from "../components/Navbar";
-import NewsletterForm from "../components/NewsletterForm";
+import {Navbar, NewsletterForm, PageHead} from "../components";
 
 import SongCard from "../components/SongCard";
 
@@ -17,10 +15,7 @@ export default function Music({ songs }: MusicProps) {
   console.log("SONGS", songs);
   return (
     <div className='music-page'>
-      <Head>
-        <title>Daniel Orpi</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHead />
       <Navbar />
       <main className='main'>
         <div className='cards__container'>{songs && songs.map((song) => <SongCard song={song} />)}</div>
