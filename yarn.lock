@@ -4597,10 +4597,10 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
-react-clean-carousel@^1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/react-clean-carousel/-/react-clean-carousel-1.0.19.tgz#9868a6f1c34725f3a2835f8ba6e1ad4543af1256"
-  integrity sha512-rovSIcy0MlQnc3VhPRUP8nUveQ9EuupxJZ0PeLND+c0uhQa9SEE3omdw9zUWSr83z2V1AwiUtWOa26gFNCI3Ig==
+react-clean-carousel@^1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/react-clean-carousel/-/react-clean-carousel-1.0.21.tgz#9d49f7cda40d62325125a48e7da00325bccc8ee5"
+  integrity sha512-EfGnaDXGQHwgDo1yYT6i271YIdUWuHjDCrVLZ8mPRsRRhGloM2LLNxWmoF/NABYuEtLdhEV/Yzj4nEH6WCqHBQ==
 
 react-dom@16.13.1:
   version "16.13.1"

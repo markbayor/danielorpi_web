@@ -5,11 +5,12 @@ const Navbar = () => {
   const router = useRouter()
 
   return (
-    <div className={router.pathname === '/' ? 'header--transparent' : 'header'}>
+    // <div className={router.pathname === '/' ? 'header--home' : 'header'}>
+    <div className='header'>
       <h1 className="header__logo">
         <Link href="/">
           <a className='btn'>
-            <img className='logo' src='/logo-header-white.png'/>
+            <img className='header__logo-img' src='/logo-header-white.png'/>
           </a>
         </Link>
       </h1>
@@ -23,9 +24,9 @@ const Navbar = () => {
         <Link href="/tour">
           <a className="btn btn--nav">Tour</a>
         </Link>
-        {/* <a href="#" className="btn btn--nav">
-          Contact
-        </a> */}
+        <Link href="/contact">
+          <a className="btn btn--nav">Contact</a>
+        </Link>
         <a href="#" className="btn btn--nav">
           Diggin
         </a>
@@ -37,4 +38,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar;
+export {Navbar};

@@ -8,37 +8,29 @@
     align-items: center;
     position: relative;
 
-    // &__background--container::after {
-    //   overflow: hidden;
-    //   background-image: linear-gradient(to bottom, $color-primary-light-3, $color-primary-light-3);
-    //   z-index: 21;
-    // }
-
     &__background--img {
       height: 45%;
       width: 100vw;
       top: 0;
       z-index: 20;
-      // animation: zoomInOut 20s ease-in-out;
+      animation: fadeIn 1s;
       // animation-iteration-count: infinite;
   }
 }
 
 .featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25rem;
+  margin-bottom: 5rem;
 
-  display: block;
   .hr {
     margin: 3rem;
-    margin-top: 7rem;
   }
 }
 
-.news {
-  // background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media (max-width: 600px) {
   .grid {
