@@ -3,3 +3,11 @@
   //   sans-serif;
   font-family: 'Bebas Neue', cursive;
 }
+
+.heading {
+
+  &__tertiary {
+    font-size: 1.3rem;
+    color: white;
+  }
+}

@@ -1,12 +1,14 @@
 .footer {
-  position: fixed;
+  // position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  height: 5rem;
+  border-top: 1px solid #4a4a4a;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(rgb(47, 47, 47), $alpha: .6);
+  z-index: 200;
 
   img {
     margin-left: 0.5rem;

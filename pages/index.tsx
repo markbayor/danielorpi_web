@@ -1,50 +1,48 @@
 import {Navbar, NewsletterForm, PageHead} from "../components";
-import { GetStaticProps, GetStaticPropsResult } from "next";
+import { GetStaticProps } from "next";
 import axios from "axios";
-
-import { ImageParams } from "../common/types";
-
 import { Carousel, Slide } from 'react-clean-carousel'
+
+import {SlideParams} from "../common/types";
 
 
 interface HomeProps {
-  heroimages?: ImageParams[];
+  slides?: SlideParams[];
 }
 
-export default function Home({ heroimages }: HomeProps) {
+export default function Home({ slides }: HomeProps) {
   return (
     <div className='home'>
       <PageHead />
       <Navbar />
-
+      
       <main className='main'>
         {/* <img className='home__background--img' src="/hero-bg.jpg" alt="" /> */}
         <section className="featured">
           {/* <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
           {/* <hr className="hr" /> */}
-          <Carousel size='medium-large'>
-            <Slide imageUrl="/tw-banner.jpg">
-            </Slide>
-            <Slide imageUrl="/bannner-crate-diggaz.jpg">
-            </Slide>
-            <Slide imageUrl="/rumble-ep.jpg">
-            </Slide>
+          <div style={{padding: '10px', backgroundColor: 'rgba(50, 50, 50, .5)', borderRadius: '3px'}}>
+          <Carousel size='medium'>
+            {
+              slides?.map((slide) => <Slide key={slide.title} linkUrl={slide.link} imageUrl={slide.image.url}>{}</Slide>)
+            }
           </Carousel>
+          </div>
         </section>
       </main>
-      {/* <footer className='footer'>
-        <NewsletterForm />
-      </footer> */}
+      <footer className='footer'>
+
+      </footer>
     </div>
   );
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  // const heroimages: ImageParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/heroimages`)).data;
+  const slides: SlideParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/slides`)).data;
 
   return {
     props: {
-      // heroimages: heroimages.filter((image) => image.isActive),
+      slides: slides.filter((slide) => slide.isActive),
     },
   };
 };

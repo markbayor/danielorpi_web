@@ -19,11 +19,11 @@ const NewsletterForm = () => {
 
   return (
     <div className='subscription'>
-      <form className='form' onSubmit={(e) => e.preventDefault()}>
-        <h2 className='heading__secondary'>Sign up for news from Daniel Orpi</h2>
-        <input className='form__input' placeholder='Name' type='text' onChange={e => setName(e.target.value)} />
-        <input className='form__input' placeholder='E-mail' type='text' onChange={e => setEmail(e.target.value)} />
-        <button disabled={name.length < 1 || email.length < 1} onClick={handleSubmit}>Subscribe</button>
+      <form className='subscription__form' onSubmit={(e) => e.preventDefault()}>
+        <h2 className='heading__tertiary'>Sign up for news from Daniel Orpi</h2>
+        <input className='subscription__form-input' placeholder='Name' type='text' onChange={e => setName(e.target.value)} />
+        <input className='subscription__form-input' placeholder='E-mail' type='text' onChange={e => setEmail(e.target.value)} />
+        <button className='subscription__form-button' disabled={name.length < 1 || email.length < 1} onClick={handleSubmit}>Subscribe</button>
       </form>
       {message.length ? <h2>{message}</h2> : ''}
     </div>
