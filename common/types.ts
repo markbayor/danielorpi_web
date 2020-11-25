@@ -1,4 +1,6 @@
-export interface ImageFormatDetails {
+/* SLIDES */
+
+export interface SlideImageFormatDetails {
   ext: string;
   url: string;
   hash: string;
@@ -9,7 +11,7 @@ export interface ImageFormatDetails {
   height: number;
 }
 
-export interface ImageDetails {
+export interface SlideImageParams {
   id: number;
   name: string;
   alternativeText: string;
@@ -17,10 +19,10 @@ export interface ImageDetails {
   width: number;
   height: number;
   formats: {
-    large: ImageFormatDetails;
-    small: ImageFormatDetails;
-    medium: ImageFormatDetails;
-    thumbnail: ImageFormatDetails;
+    large: SlideImageFormatDetails;
+    small: SlideImageFormatDetails;
+    medium: SlideImageFormatDetails;
+    thumbnail: SlideImageFormatDetails;
   };
   hash: string;
   ext: string;
@@ -31,17 +33,17 @@ export interface ImageDetails {
   created_at: Date;
 }
 
-export interface ImageParams {
+export interface SlideParams {
   id: number;
-  name: string;
-  created_at: Date;
-  type: string;
-  redirectUrl: string;
-  description: string;
+  title: string;
+  link: string;
   isActive: boolean;
-  image: ImageDetails;
+  image: SlideImageParams;
+  created_at: Date;
 }
 
+
+/* SONGS */
 interface SongCoverFormatDetails {
   ext: string;
   hash: string;
@@ -76,6 +78,22 @@ export interface SongDetails {
   updated_at: Date;
   beatportUrl?: string;
   spotifyUrl?: string;
+  spotifyEmbedUrl?: string;
   soundcloudUrl?: string;
+  youtubeUrl?: string;
+  deezerUrl?: string;
+  appleMusicUrl?: string;
+  amazonMusicUrl?: string;
+  tidalUrl?: string;
   cover: SongCoverDetails;
+}
+
+
+/* TOUR EVENTS */
+export interface EventParams {
+  location: string;
+  date: Date;
+  lineup: string;
+  ticketLink: string;
+  isActive: boolean;
 }

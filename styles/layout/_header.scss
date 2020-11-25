@@ -13,6 +13,7 @@
     position: absolute;
     background-color: transparent;
     top: 0;
+    padding-top: 2rem;
 
     &__logo {
 
@@ -26,25 +27,25 @@
     & > .navigation {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding: 0rem 1.5rem;
+        padding: 0rem 1rem;
         text-transform: uppercase;
         .btn--nav {
             &:link,
             &:visited {
               color: #fff;
               background-color: inherit;
-              padding: 1rem 2rem;
-              margin: 1rem;
-              text-shadow: 0 .5rem 1rem rgb(50, 50, 50);
-              font-size: 4rem;
+              padding: .3rem .5rem;
+              margin: 1.3rem;
+              text-shadow: 0 .25rem .6rem rgb(50, 50, 50);
+              font-size: 1.5rem;
               text-transform: uppercase;
-              letter-spacing: 3px;
+              letter-spacing: -1px;
               color: #eee;
         
               // display: block;
-              animation: moveInBottom 2s ease;
+            //   animation: moveInBottom 2s ease;
             }
         }
     }
@@ -63,40 +64,41 @@
         top: 0;
         * > .header__logo {
             margin-bottom: 0;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
     
             &-img {
-                text-shadow: 1rem;
+                text-shadow: .6rem;
                 width: 50vw;
                 -webkit-filter: drop-shadow(0 5px 5px rgba(rgb(0, 0, 0), .7));
                 filter:         drop-shadow(0 5px 5px rgba(rgb(0, 0, 0), .7)); 
-                animation: moveInBottom 2s ease;
+                // animation: moveInBottom 2s ease;
             }
         }
 
         & > .navigation {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 0rem 1.5rem;
+            padding: .3rem .5rem;
+            margin: .7rem;
             text-transform: uppercase;
             .btn--nav {
                 &:link,
                 &:visited {
                   color: #fff;
                   background-color: inherit;
-                  padding: 1rem 2rem;
-                  margin: 1rem;
-                  text-shadow: 0 .5rem 1rem rgb(50, 50, 50);
-                  font-size: 7rem;
+                  padding: .6rem 1.2rem;
+                  margin: .6rem;
+                  text-shadow: 0 .3rem .6rem rgb(50, 50, 50);
+                  font-size: 5rem;
                   text-transform: uppercase;
                   letter-spacing: 3px;
                   color: #eee;
             
                   // display: block;
-                  animation: moveInBottom 2s ease;
+                //   animation: moveInBottom 2s ease;
                 }
             }
         }   
