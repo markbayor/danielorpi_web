@@ -17,21 +17,19 @@ export default function Home({ slides }: HomeProps) {
       <Navbar />
       
       <main className='main'>
-        {/* <img className='home__background--img' src="/hero-bg.jpg" alt="" /> */}
         <section className="featured">
-          {/* <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
-          {/* <hr className="hr" /> */}
-          <div style={{padding: '10px', backgroundColor: 'rgba(50, 50, 50, .5)', borderRadius: '3px'}}>
-          <Carousel size='medium'>
-            {
-              slides?.map((slide) => <Slide key={slide.title} linkUrl={slide.link} imageUrl={slide.image.url}>{}</Slide>)
-            }
-          </Carousel>
+          <div className='slider__container'>
+            <Carousel size='medium'>
+              {
+                slides?.map((slide) => <Slide key={slide.title} linkUrl={slide.link} imageUrl={slide.image.url}>{}</Slide>)
+              }
+            </Carousel>
           </div>
+          <NewsletterForm />
         </section>
       </main>
       <footer className='footer'>
-
+          
       </footer>
     </div>
   );

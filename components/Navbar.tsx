@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { useRouter } from 'next/router'
+import React, {useState} from "react";
+import {useWindowSize} from "../common/functions";
 
 const Navbar = () => {
-  const router = useRouter()
+  const {width, height} = useWindowSize()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    // <div className={router.pathname === '/' ? 'header--home' : 'header'}>
-    <div className='header'>
+    <div className={`${width && width > 700 ? 'header' : 'header_mobile'}`}>
       <h1 className="header__logo">
         <Link href="/">
           <a className='btn'>
@@ -14,7 +15,13 @@ const Navbar = () => {
           </a>
         </Link>
       </h1>
-      <nav className="navigation">
+      {width && width < 700 ? <div className={`${isMenuOpen ? 'container change' : 'container'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
+      : null}
+      <nav className={`navigation${isMenuOpen ? ' u-translate-x-0': ' u-translate-x-30'}`}>
         <Link href="/">
           <a className="btn btn--nav">Home</a>
         </Link>

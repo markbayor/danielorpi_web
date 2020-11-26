@@ -97,3 +97,11 @@ export interface EventParams {
   ticketLink: string;
   isActive: boolean;
 }
+
+export interface TourEventParams {
+  location: string;
+  date: Date;
+  lineup: string;
+  ticketLink: string;
+  isActive: boolean;
+}
