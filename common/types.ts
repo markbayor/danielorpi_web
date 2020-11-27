@@ -100,8 +100,11 @@ export interface EventParams {
 
 export interface TourEventParams {
   location: string;
-  date: Date;
-  lineup: string;
   ticketLink: string;
   isActive: boolean;
+  city: string;
+  country: string;
+  name: string;
+  startDate: Date;
+  endDate?: Date;
 }

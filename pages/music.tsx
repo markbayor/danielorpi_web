@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { GetStaticProps } from "next";
 import { SongDetails } from "../common/types";
-import {Navbar, NewsletterForm, PageHead} from "../components";
+import {Footer, Navbar, PageHead} from "../components";
 
 import {Card, CardProps} from 'react-clean-card';
 
@@ -18,8 +18,8 @@ export default function Music({ songs }: MusicProps) {
       <main className='main'>
         <div className='cards__container'>{songs && songs.map((song) => <Card size='normal' imageUrl={song.cover.url} {...song} />)}</div>
       </main>
-      <footer className='footer'>
-      </footer>
+      
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,10 @@
-import {Navbar, NewsletterForm, PageHead} from "../components";
+import React from 'react'
 import { GetStaticProps } from "next";
 import axios from "axios";
-import { Carousel, Slide } from 'react-clean-carousel'
-
 import {SlideParams} from "../common/types";
 
+import {Footer, Navbar, PageHead} from "../components";
+import { Carousel, Slide } from 'react-clean-carousel'
 
 interface HomeProps {
   slides?: SlideParams[];
@@ -19,18 +19,16 @@ export default function Home({ slides }: HomeProps) {
       <main className='main'>
         <section className="featured">
           <div className='slider__container'>
-            <Carousel size='medium'>
+            <Carousel size='medium' arrowsContainerStyle={{ width: '100%' }} >
               {
                 slides?.map((slide) => <Slide key={slide.title} linkUrl={slide.link} imageUrl={slide.image.url}>{}</Slide>)
               }
             </Carousel>
           </div>
-          <NewsletterForm />
         </section>
       </main>
-      <footer className='footer'>
-          
-      </footer>
+
+      <Footer />
     </div>
   );
 }

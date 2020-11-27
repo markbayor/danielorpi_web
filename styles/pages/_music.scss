@@ -6,6 +6,7 @@
     flex-direction: column;
     // justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .cards__container {
@@ -13,11 +14,11 @@
     flex-direction: row;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding: 1rem 3rem;
+    padding: 1rem;
 
     margin: 1rem;
     margin-top: 3rem;
-    width: 100%;
+    width: 80%;
     min-height: 150vh;
     border-radius: 3px;
 }
