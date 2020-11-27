@@ -1,0 +1,46 @@
+.contact-page {
+  position: relative;
+}
+
+.contact-info {
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 75vw;
+  color: rgb(236, 236, 236);
+  text-align: center;
+
+  @media only screen and (max-width: 700px) { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &_sub {
+    padding: 1rem;
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    -webkit-text-stroke: 1px rgba(rgb(150, 144, 73), 1);
+    -webkit-text-fill-color: white;
+
+    @media only screen and (max-width: 700px) { 
+      font-size: 2.5rem;
+    }
+
+    &--actual {
+      font-family: 'Bebas Neue';
+      font-weight: 100;
+      font-size: 1.7rem;
+      padding: 1rem 0;
+      text-align: center;
+      -webkit-text-stroke: white;
+
+      @media only screen and (max-width: 700px) {  
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

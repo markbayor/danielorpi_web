@@ -2,7 +2,6 @@
 
 .subscription {
   padding: 2rem;
-  justify-self: flex-start;
   &__form {
     display: flex;
     flex-direction: row;
@@ -31,9 +30,9 @@
     }
 
     &-input {
-      height: 1.7rem;
+      height: 1.5rem;
       width: 10rem;
-      margin-left: 1rem;
+      margin-left: .5rem;
       padding: .7rem;
       border: none;
       font-family: 'Bebas Neue';
@@ -42,8 +41,9 @@
 
     &-button {
       transform: scale(.8);
-      height: 3rem;
-      width: 10rem;
+      height: fit-content;
+      width: fit-content;
+      padding: .7rem;
       border: none; 
       font-size: 1.5rem;
       border-radius: 2px;

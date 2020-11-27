@@ -27,7 +27,7 @@ const NewsletterForm = () => {
   return (
     <div className='subscription'>
       <form className='subscription__form' onSubmit={(e) => e.preventDefault()}>
-        <h2 className='heading__secondary' style={{fontSize: '1.6rem'}}>Sign up for news from Daniel Orpi</h2>
+        <h2 className='heading__secondary' style={{fontSize: '1.3rem'}}>Sign up for news from Daniel Orpi</h2>
         <div className='subscription__form-inputs'>
           <input className='subscription__form-input' placeholder='Name' type='text' onChange={e => setName(e.target.value)} />
           <input className='subscription__form-input' placeholder='E-mail' type='email' onChange={e => setEmail(e.target.value)} />

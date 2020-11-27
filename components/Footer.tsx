@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='footer'>
        <NewsletterForm />
        <div className='copyright-container'>
-        &copy;  Daniel Orpi
+        &copy; 2020 Daniel Orpi
        </div>
     </footer>
   )
