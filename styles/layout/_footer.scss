@@ -2,13 +2,21 @@
   // position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   border-top: 1px solid #4a4a4a;
+  position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgba(rgb(47, 47, 47), $alpha: .6);
+  background-color: rgba(rgb(0, 0, 0), $alpha: .4);
   z-index: 200;
+  
+  @media only screen and (max-width: 700px) { 
+    position: absolute;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
 
   img {
     margin-left: 0.5rem;
@@ -19,4 +27,11 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.copyright-container {
+  color: lightgray;
+  padding: 1rem;
+  font-family: 'Bebas Neue';
+  text-align: center;
 }

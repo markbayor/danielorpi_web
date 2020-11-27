@@ -4602,10 +4602,10 @@ react-clean-card@^0.0.3:
   resolved "https://registry.yarnpkg.com/react-clean-card/-/react-clean-card-0.0.3.tgz#60d1f1280e758723a618844270da064e3cb31742"
   integrity sha512-R7ibBjsV7AaL/G5i3rXdBNe2GLVRpO4ZvnxGFVo4ED5VedEZVbTPY35qkxiwXDYuUfRZyWL3imaF7tUxzhKAcw==
 
-react-clean-carousel@^1.0.21:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/react-clean-carousel/-/react-clean-carousel-1.0.21.tgz#9d49f7cda40d62325125a48e7da00325bccc8ee5"
-  integrity sha512-EfGnaDXGQHwgDo1yYT6i271YIdUWuHjDCrVLZ8mPRsRRhGloM2LLNxWmoF/NABYuEtLdhEV/Yzj4nEH6WCqHBQ==
+react-clean-carousel@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/react-clean-carousel/-/react-clean-carousel-1.0.23.tgz#91188f1266d650173c424ce661d83c916446a07f"
+  integrity sha512-SrDB5MJdlYdgvleDEr268PvaJB8EAQNqGxYOviHmwTWGRijXSq0yFWyZ8DjE0B1/KDY0mn9YYe++pLcnaaKdAg==
 
 react-dom@16.13.1:
   version "16.13.1"
