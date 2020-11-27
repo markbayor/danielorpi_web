@@ -5,7 +5,6 @@ const TourEvent = ({location, ticketLink, city, country, name, startDate, endDat
   console.log(typeof startDate)
 
   const parsedStartDate = new Date(startDate)
-  const parsedEndDate = endDate && new Date(endDate)
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
   return (
