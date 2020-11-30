@@ -40,6 +40,7 @@ export interface SlideParams {
   isActive: boolean;
   image: SlideImageParams;
   created_at: Date;
+  orderNum: number;
 }
 
 
@@ -86,6 +87,7 @@ export interface SongDetails {
   amazonMusicUrl?: string;
   tidalUrl?: string;
   cover: SongCoverDetails;
+  orderNum: number;
 }
 
 

@@ -1,7 +1,11 @@
 import React from 'react'
 import {NewsletterForm} from '.'
 
-const Footer = () => {
+interface FooterProps {
+  style?: React.CSSProperties;
+}
+
+const Footer = ({style}: FooterProps) => {
   return (
     <footer className='footer'>
        <NewsletterForm />
