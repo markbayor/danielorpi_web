@@ -49,14 +49,16 @@
               padding: .3rem .5rem;
               margin: 1.3rem;
               text-shadow: 0 .25rem .6rem rgb(50, 50, 50);
-              font-size: 1.9rem;
+              text-decoration: none;
+              font-size: 2rem;
               text-transform: uppercase;
               letter-spacing: 2px;
               color: #eee;
               transition: all .3s;
-        
-              // display: block;
-            //   animation: moveInBottom 2s ease;
+    
+              &:hover {
+                transform: scale(1.05);
+              }
             }
         }
     }
@@ -113,9 +115,13 @@
                   letter-spacing: -1px;
                   color: #eee;
                   transition: all .3s;
+                  text-decoration: none;
             
                   // display: block;
                 //   animation: moveInBottom 2s ease;
+                  &:hover {
+                    transform: scale(1.05);
+                  }
                 }
             }
         }
