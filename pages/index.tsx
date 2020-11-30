@@ -1,5 +1,5 @@
 import React from 'react'
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import axios from "axios";
 import {SlideParams} from "../common/types";
 
@@ -33,7 +33,7 @@ export default function Home({ slides }: HomeProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const slides: SlideParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/slides`)).data;
 
   return {

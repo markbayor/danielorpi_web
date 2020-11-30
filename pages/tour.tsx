@@ -1,4 +1,4 @@
-import {GetStaticProps} from 'next'
+import {GetServerSideProps, GetStaticProps} from 'next'
 import React from 'react'
 import {PageHead,Navbar, TourEvent, Footer} from '../components'
 import axios from 'axios'
@@ -25,7 +25,7 @@ const tourPage = ({events}: TourPageParams) => {
               country={event.country}
               name={event.name}
               isActive={event.isActive}
-            />) : 'No dates for now! Subscribe to get info on new tours and dates'
+            />) : <div className="c-dates-message">COMING SOON...</div>
           }
         </div>
       </main>
@@ -35,7 +35,7 @@ const tourPage = ({events}: TourPageParams) => {
 }
 export default tourPage 
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const events: TourEventParams[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/events`)).data;
 
   return {

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import axios from "axios";
-import { GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 import { SongDetails } from "../common/types";
 import {Footer, Navbar, PageHead} from "../components";
 
-import {Card, CardProps} from 'react-clean-card';
+import {Card} from 'react-clean-card';
 
 interface MusicProps {
   songs: SongDetails[];
@@ -24,7 +24,7 @@ export default function Music({ songs }: MusicProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const songs: SongDetails[] = (await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/eps`)).data;
 
   return {
