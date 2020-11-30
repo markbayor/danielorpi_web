@@ -16,7 +16,7 @@ export default function Music({ songs }: MusicProps) {
       <PageHead />
       <Navbar />
       <main className='main'>
-        <div className='cards__container'>{songs && songs.map((song) => <Card mainStyle={{fontFamily: "Bebas Neue"}} size='normal' imageUrl={song.cover.url} {...song} />)}</div>
+        <div className='cards__container'>{songs && songs.sort((a, b) => a.orderNum - b.orderNum).map((song) => <Card mainStyle={{fontFamily: "Bebas Neue"}} size='normal' imageUrl={song.cover.url} {...song} />)}</div>
       </main>
       
       <Footer />
