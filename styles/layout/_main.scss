@@ -9,10 +9,10 @@
   width: 100%;
   min-height: 150vh;
   // TODO
-  background-image: linear-gradient(to right bottom, rgba(black, .6), rgba(black, .6)), url(../../public/fondo.jpg);
+  background-image: linear-gradient(to right bottom, rgba(rgb(0, 0, 0), .6), rgba(black, .6)), url(../../public/fondo.jpg);
   background-size: cover;
   background-position: top;
-  background-position-y: 15rem;
+  background-position-y: 10rem;
 
 
   @media only screen and (max-width: 700px) {

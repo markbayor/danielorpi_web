@@ -4597,10 +4597,10 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
-react-clean-card@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-clean-card/-/react-clean-card-0.0.3.tgz#60d1f1280e758723a618844270da064e3cb31742"
-  integrity sha512-R7ibBjsV7AaL/G5i3rXdBNe2GLVRpO4ZvnxGFVo4ED5VedEZVbTPY35qkxiwXDYuUfRZyWL3imaF7tUxzhKAcw==
+react-clean-card@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-clean-card/-/react-clean-card-0.0.7.tgz#41c508af4cf49e5a6c1223b02598b366fbc0a338"
+  integrity sha512-WjWxL7SnxO1vfJmWuzLeyMykKFSxPmmcDpdmXJ5ZjtXkjaeSzVxPFNcvXMGEaid72e/jVVHV2FiID7wdNyJv5w==
 
 react-clean-carousel@^1.0.23:
   version "1.0.23"

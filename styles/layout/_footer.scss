@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(rgb(0, 0, 0), $alpha: .4);
-  z-index: 200;
+  z-index: 99999;
   
   @media only screen and (max-width: 700px) { 
     position: absolute;
