@@ -35,8 +35,8 @@ const NewsletterForm = () => {
         <div className={`subscription__form-button subscription__form-button--${name.length < 1 || email.length < 1 ? 'disabled' : 'enabled'}`} onClick={handleSubmit}>
           <span style={{fontSize: '1.5rem'}}>Subscribe</span>
         </div>
+        {message.length ? <h2 style={{color: 'red', textAlign: 'center'}}>{message}</h2> : ''}
       </form>
-      {message.length ? <h2 style={{color: 'red', textAlign: 'center'}}>{message}</h2> : ''}
     </div>
   )
 }
