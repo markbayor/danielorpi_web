@@ -18,13 +18,11 @@ export default function Home({ slides }: HomeProps) {
       
       <main className='main'>
         <section className="featured">
-          <div className='slider__container'>
             <Carousel size='medium' arrowsContainerStyle={{ width: '100%' }} >
               {
                 slides?.map((slide) => <Slide key={slide.title} linkUrl={slide.link} imageUrl={slide.image.url}>{}</Slide>)
               }
             </Carousel>
-          </div>
         </section>
       </main>
 

@@ -9,6 +9,9 @@ const Footer = ({style}: FooterProps) => {
   return (
     <footer className='footer'>
        <NewsletterForm />
+       <div className="social-container">
+
+       </div>
        <div className='copyright-container'>
         &copy; 2020 Daniel Orpi
        </div>
