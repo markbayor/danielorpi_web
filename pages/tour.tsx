@@ -16,7 +16,8 @@ const tourPage = ({events}: TourPageParams) => {
       <main className='main'>
         <div className='events'>
           {
-            events && events.length ? events.map(event => <TourEvent 
+            events && events.length ? events.sort((a, b) => new Date(a.startDate).getTime()  - new Date(b.startDate).getTime()).map(event => <TourEvent 
+              key={event.name}
               location={event.location} 
               startDate={event.startDate} 
               endDate={event.endDate} 

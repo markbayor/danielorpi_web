@@ -11,7 +11,7 @@ const Navbar = () => {
       <h1 className="header__logo">
         <Link href="/">
           <a className='btn'>
-            <img className='header__logo-img' src='/logo-header-white.png'/>
+            <img className='header__logo-img' src='/logo-header-white.png' alt="Daniel Orpi logo"/>
           </a>
         </Link>
       </h1>
