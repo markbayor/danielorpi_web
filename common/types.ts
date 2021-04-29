@@ -107,7 +107,7 @@ export interface TourEventParams {
   city: string;
   country: string;
   name: string;
-  orderNum: string;
+  orderNum?: string;
   startDate: string;
   endDate?: string;
 }
